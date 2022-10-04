@@ -9,12 +9,23 @@ function verificar(){
         var sex = document.getElementsByName('sex')
         var idade = ano - Number(anof.value)
         var genero = ''
+        var img = document.createElement('img')
+        img.setAttribute('id', 'foto')
         if(sex[0].checked){
             genero = 'Mulher'
         } else if (sex[1].checked){
             genero = 'Homem'
+            if(idade >= 0 && idade < 10) {
+                // Criança
+            } else if(idade < 21) {
+                // Jovem
+            }else if (idade < 50) {
+                // Adulto
+            } else {
+                // Idoso
+            }
         }
-
+        res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
     }
 }
