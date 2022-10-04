@@ -12,7 +12,15 @@ header > h1{
 
 section{
     background-color: white;
-    width: 700px;
+    width: 500px;
     margin: auto;
     padding: 15px;
+    border-radius: 15px;
+    font-size: 1.2em;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
 }
