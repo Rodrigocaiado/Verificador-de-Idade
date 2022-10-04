@@ -1,5 +1,18 @@
 @charset "UTF-8";
  
 body{
-    
+    background-color: rgb(128, 159, 170);
+}
+
+header > h1{ 
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+section{
+    background-color: white;
+    width: 700px;
+    margin: auto;
+    padding: 15px;
 }

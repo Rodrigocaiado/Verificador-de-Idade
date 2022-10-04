@@ -13,10 +13,23 @@
     </header>
     <section>
         <div>
-
+            <p>
+                Ano de nascimento:
+                <input type="number" name="ano" id="iano" required min="1922" max="2022">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="sex" id="ifem" checked>
+                <label for="ifem">Feminino</label>
+                <input type="radio" name="sex" id="imas">
+                <label for="imas">Masculino</label>                
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
         <div id="res">
-
+            Aqui vai o resultado
         </div>
     </section>
     <script src="script.js"></script>
